@@ -1,0 +1,7 @@
+# Missing combined-model dependencies in a fresh reference checkout.
+# NOTE: current momentfm releases may upgrade NumPy/Transformers beyond the
+# ranges in the reference repository's older requirements.txt. Prefer using an
+# environment in which the reference combined model is already known to run.
+momentfm>=0.1.5,<0.2
+peft>=0.10
+sentencepiece>=0.1.99
