@@ -23,7 +23,7 @@ eval_metric = "accuracy"
 eval_metric_direction = "max"
 
 [datasets.ECG-Arrhythmia]
-root = "data/ecg-arrhythmia-1.0.0"
+root = "data/ecg-arrhythmia/ecg-arrhythmia"
 processed_dir = "processed/rhythm_single"
 label_mode = "single_unique_rhythm"
 # Set >0 only for an explicit high-resolution-window ablation. Zero matches the
@@ -53,7 +53,7 @@ examples = false
 
 [models.medtsllm.llm]
 enabled = true
-llm = "google/flan-t5-xl"
+llm = "meta-llama/Llama-2-7b-hf"
 load_in_4bit = false
 load_in_8bit = false
 llm_layers = -1
